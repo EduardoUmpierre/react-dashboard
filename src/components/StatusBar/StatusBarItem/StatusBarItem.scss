@@ -1,0 +1,78 @@
+.status-bar__item {
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05);
+    min-height: 5rem;
+    overflow: hidden;
+
+    &,
+    > .status-bar__icon {
+        align-items: center;
+        display: flex;
+        height: 100%;
+    }
+
+    // Icon
+    > .status-bar__icon {
+        background-color: blue;
+        justify-content: center;
+        min-width: 6.875rem;
+
+        > svg {
+            color: #fff;
+            font-size: 2.5rem;
+        }
+    }
+
+    // Data
+    > .status-bar__data {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.25rem;
+
+        > span {
+            line-height: 1;
+        }
+
+        > .status-bar__amount {
+            color: #64686c;
+            font-size: 1.75rem;
+            margin-bottom: 0.313rem;
+        }
+
+        > .status-bar__text {
+            color: #9fadc3;
+            font-size: 0.875rem;
+        }
+    }
+
+    // Modifiers
+    &--blue {
+        
+        > .status-bar__icon {
+            background-color: #30a5ff;
+        }
+    }
+
+    &--yellow {
+        
+        > .status-bar__icon {
+            background-color: #ffb53e;
+        }
+    }
+
+    &--green {
+        
+        > .status-bar__icon {
+            background-color: #1ebfae;
+        }
+    }
+
+    &--red {
+        
+        > .status-bar__icon {
+            background-color: #f9243f;
+        }
+    }
+}
