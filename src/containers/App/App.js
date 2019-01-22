@@ -11,6 +11,7 @@ class App extends Component {
         DashboardAPI.getWidgets().then(res =>
             this.setState({ widgets: res.data })
         )
+
         DashboardAPI.getPageViews().then(res =>
             this.setState({ pageViews: res.data })
         )
@@ -18,16 +19,23 @@ class App extends Component {
 
     state = {
         widgets: null,
-        pageViews: null
+        pageViews: null,
+        chat: null
     }
 
     render() {
         return (
             <div className='App container'>
                 <h2>Dashboard</h2>
+                
                 <StatusBar widgets={this.state.widgets} />
                 <Chart data={this.state.pageViews} />
-                <Chat />
+
+                <div className='row'>
+                    <div className='col-12 col-md-8'>
+                        <Chat messages={this.state.chat} />
+                    </div>
+                </div>
             </div>
         )
     }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Chart.scss'
-import Box from '../../hoc/Box/Box'
+import Box from '../Box/Box'
 import {
     AreaChart,
     CartesianGrid,
@@ -21,7 +21,7 @@ const report = ({ data }) => (
                 >
                     <CartesianGrid strokeDasharray='3 3' />
                     <XAxis dataKey='month' tick={{ fontSize: 14 }} />
-                    <YAxis tick={{ fontSize: 14 }} />
+                    <YAxis tick={{ fontSize: 14 }} width={40} />
                     <Tooltip />
                     <Area
                         type='monotone'
