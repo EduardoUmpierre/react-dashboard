@@ -1,0 +1,28 @@
+.chat-form {
+    border-top: 1px solid #eee;
+    display: flex;
+    padding: 0.625rem;
+
+    > input {
+        border: 1px solid #eee;
+        border-radius: 3px 0 0 3px;
+        color: #777783;
+        padding: 0.5rem 0.625rem;
+        width: 100%;
+    }
+
+    > button {
+        background-color: #8ad919;
+        border: none;
+        border-radius: 0 3px 3px 0;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 700;
+        padding: 0.5rem 0.875rem;
+    }
+
+    > input,
+    > button {
+        font-size: 0.875rem;
+    }
+}
