@@ -76,9 +76,7 @@ ShallowWrapper {
             />
           </loader>
         </div>,
-        <chatForm
-          isDisabled={false}
-        />,
+        <chatForm />,
       ],
       "icon": "comments",
       "title": "Chat",
@@ -209,7 +207,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "inputValue": undefined,
-          "isDisabled": false,
+          "isDisabled": undefined,
           "onFormSubmit": undefined,
           "onInputChange": undefined,
         },
@@ -266,9 +264,7 @@ ShallowWrapper {
               />
             </loader>
           </div>,
-          <chatForm
-            isDisabled={false}
-          />,
+          <chatForm />,
         ],
         "icon": "comments",
         "title": "Chat",
@@ -399,7 +395,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "inputValue": undefined,
-            "isDisabled": false,
+            "isDisabled": undefined,
             "onFormSubmit": undefined,
             "onInputChange": undefined,
           },

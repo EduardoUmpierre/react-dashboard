@@ -25,7 +25,8 @@ class App extends Component {
         widgets: null,
         pageViews: null,
         messages: null,
-        chatInput: ''
+        chatInput: '',
+        chatFormDisabled: false
     }
 
     /**
@@ -47,6 +48,8 @@ class App extends Component {
             message
         }
 
+        this.setState({ chatFormDisabled: true })
+
         // The second then() always executes
         DashboardAPI.postMessage(message)
             .then()
@@ -54,7 +57,8 @@ class App extends Component {
             .then(() =>
                 this.setState(state => ({
                     messages: [...state.messages, newMessage],
-                    chatInput: ''
+                    chatInput: '',
+                    chatFormDisabled: false
                 }))
             )
     }
@@ -85,6 +89,7 @@ class App extends Component {
                             inputValue={this.state.chatInput}
                             onFormSubmit={this.chatFormSubmitHandler}
                             onInputChange={this.chatInputChangeHandler}
+                            isFormDisabled={this.state.chatFormDisabled}
                         />
                     </div>
                 </div>

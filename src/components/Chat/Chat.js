@@ -5,7 +5,13 @@ import ChatItem from './ChatItem/ChatItem'
 import Loader from '../Loader/Loader'
 import ChatForm from './ChatForm/ChatForm'
 
-const chat = ({ messages, inputValue, onFormSubmit, onInputChange }) => (
+const chat = ({
+    messages,
+    inputValue,
+    onFormSubmit,
+    onInputChange,
+    isFormDisabled
+}) => (
     <Box title='Chat' icon='comments'>
         <div className='chat'>
             <Loader loaded={messages}>
@@ -27,7 +33,7 @@ const chat = ({ messages, inputValue, onFormSubmit, onInputChange }) => (
             inputValue={inputValue}
             onFormSubmit={onFormSubmit}
             onInputChange={onInputChange}
-            isDisabled={!messages}
+            isDisabled={!messages || isFormDisabled}
         />
     </Box>
 )
