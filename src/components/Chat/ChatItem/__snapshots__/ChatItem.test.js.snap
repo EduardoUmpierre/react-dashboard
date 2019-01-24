@@ -1,0 +1,335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ChatItem /> renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <chatItem
+    displayPortraitLeft={true}
+    message="Test"
+    portrait=""
+    time="1 min ago"
+    userName="Eu"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="chat-item__photo"
+        >
+          
+        </div>,
+        <div
+          className="chat-item__data"
+        >
+          <div
+            className="chat-item__upper"
+          >
+            <div
+              className="chat-item__name"
+            >
+              Eu
+            </div>
+            <div
+              className="chat-item__time"
+            >
+              1 min ago
+            </div>
+          </div>
+          <p
+            className="chat-item__message"
+          >
+            Test
+          </p>
+        </div>,
+      ],
+      "className": "chat-item chat-item--left",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "",
+          "className": "chat-item__photo",
+        },
+        "ref": null,
+        "rendered": "",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="chat-item__upper"
+            >
+              <div
+                className="chat-item__name"
+              >
+                Eu
+              </div>
+              <div
+                className="chat-item__time"
+              >
+                1 min ago
+              </div>
+            </div>,
+            <p
+              className="chat-item__message"
+            >
+              Test
+            </p>,
+          ],
+          "className": "chat-item__data",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="chat-item__name"
+                >
+                  Eu
+                </div>,
+                <div
+                  className="chat-item__time"
+                >
+                  1 min ago
+                </div>,
+              ],
+              "className": "chat-item__upper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Eu",
+                  "className": "chat-item__name",
+                },
+                "ref": null,
+                "rendered": "Eu",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1 min ago",
+                  "className": "chat-item__time",
+                },
+                "ref": null,
+                "rendered": "1 min ago",
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Test",
+              "className": "chat-item__message",
+            },
+            "ref": null,
+            "rendered": "Test",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="chat-item__photo"
+          >
+            
+          </div>,
+          <div
+            className="chat-item__data"
+          >
+            <div
+              className="chat-item__upper"
+            >
+              <div
+                className="chat-item__name"
+              >
+                Eu
+              </div>
+              <div
+                className="chat-item__time"
+              >
+                1 min ago
+              </div>
+            </div>
+            <p
+              className="chat-item__message"
+            >
+              Test
+            </p>
+          </div>,
+        ],
+        "className": "chat-item chat-item--left",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+            "className": "chat-item__photo",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="chat-item__upper"
+              >
+                <div
+                  className="chat-item__name"
+                >
+                  Eu
+                </div>
+                <div
+                  className="chat-item__time"
+                >
+                  1 min ago
+                </div>
+              </div>,
+              <p
+                className="chat-item__message"
+              >
+                Test
+              </p>,
+            ],
+            "className": "chat-item__data",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="chat-item__name"
+                  >
+                    Eu
+                  </div>,
+                  <div
+                    className="chat-item__time"
+                  >
+                    1 min ago
+                  </div>,
+                ],
+                "className": "chat-item__upper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Eu",
+                    "className": "chat-item__name",
+                  },
+                  "ref": null,
+                  "rendered": "Eu",
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "1 min ago",
+                    "className": "chat-item__time",
+                  },
+                  "ref": null,
+                  "rendered": "1 min ago",
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Test",
+                "className": "chat-item__message",
+              },
+              "ref": null,
+              "rendered": "Test",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
