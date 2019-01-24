@@ -2,9 +2,17 @@ import React from 'react'
 import './StatusBarItem.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from '../../Loader/Loader'
+import NumericLabel from 'react-pretty-numbers'
 
 const statusBarItem = ({ icon, amount, text, theme }) => {
     const classes = ['status-bar__item', `status-bar__item--${theme}`]
+    const numericLabelParams = {
+        shortFormat: true,
+        shortFormatPrecision: 1,
+        shortFormatMinValue: 1000,
+        precision: 0,
+        locales: 'en-US'
+    }
 
     return (
         <div className='col-12 col-sm-12 col-md-6 col-lg-3'>
@@ -15,7 +23,11 @@ const statusBarItem = ({ icon, amount, text, theme }) => {
 
                 <div className='status-bar__data'>
                     <Loader loaded={amount}>
-                        <span className='status-bar__amount'>{amount}</span>
+                        <span className='status-bar__amount'>
+                            <NumericLabel params={numericLabelParams}>
+                                {amount}
+                            </NumericLabel>
+                        </span>
                         <span className='status-bar__text'>{text}</span>
                     </Loader>
                 </div>
