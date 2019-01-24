@@ -6,9 +6,9 @@ import Loader from '../Loader/Loader'
 import ChatForm from './ChatForm/ChatForm'
 
 const chat = ({ messages, inputValue, onFormSubmit, onInputChange }) => (
-    <Box title='Chat'>
+    <Box title='Chat' icon='comments'>
         <div className='chat'>
-            <Loader isLoading={!messages}>
+            <Loader loaded={messages}>
                 {messages &&
                     messages.map((item, index) => (
                         <ChatItem
@@ -27,6 +27,7 @@ const chat = ({ messages, inputValue, onFormSubmit, onInputChange }) => (
             inputValue={inputValue}
             onFormSubmit={onFormSubmit}
             onInputChange={onInputChange}
+            isDisabled={!messages}
         />
     </Box>
 )

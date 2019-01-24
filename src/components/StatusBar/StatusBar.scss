@@ -1,3 +1,6 @@
 .status-bar {
-    margin-bottom: 1.250rem;
+    
+    > div {
+        margin-bottom: 1.25rem;
+    }
 }

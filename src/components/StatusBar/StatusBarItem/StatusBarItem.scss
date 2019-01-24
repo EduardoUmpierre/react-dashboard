@@ -2,8 +2,15 @@
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05);
-    min-height: 5rem;
     overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+
+    &,
+    > .status-bar__icon,
+    > .status-bar__data {
+        min-height: 5rem;
+    }
 
     &,
     > .status-bar__icon {
@@ -16,7 +23,7 @@
     > .status-bar__icon {
         background-color: blue;
         justify-content: center;
-        min-width: 6.875rem;
+        width: 100%;
 
         > svg {
             color: #fff;
@@ -26,9 +33,12 @@
 
     // Data
     > .status-bar__data {
+        align-items: center;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         padding: 0 1.25rem;
+        width: 100%;
 
         > span {
             line-height: 1;
@@ -48,30 +58,58 @@
 
     // Modifiers
     &--blue {
-        
         > .status-bar__icon {
             background-color: #30a5ff;
         }
     }
 
     &--yellow {
-        
         > .status-bar__icon {
             background-color: #ffb53e;
         }
     }
 
     &--green {
-        
         > .status-bar__icon {
             background-color: #1ebfae;
         }
     }
 
     &--red {
-        
         > .status-bar__icon {
             background-color: #f9243f;
         }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .status-bar__item {
+        flex-direction: row;
+
+        > .status-bar__icon {
+            max-width: 9.375rem;
+        }
+
+        > .status-bar__data {
+            align-items: flex-start;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .status-bar__item {
+
+        > .status-bar__icon {
+            max-width: 5.625rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .status-bar__item {
+
+        > .status-bar__icon {
+            max-width: 6.875rem;
+        }   
     }
 }

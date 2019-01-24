@@ -1,9 +1,15 @@
 import React from 'react'
+import './Loader.scss'
+import { ClipLoader } from 'react-spinners'
 
-const loader = ({ isLoading, children }) => {
-    let component = <div>Loading</div>
+const loader = ({ loaded, children }) => {
+    let component = (
+        <div className='loader'>
+            <ClipLoader loading color={'#c1c1c1'} />
+        </div>
+    )
 
-    if (!isLoading) {
+    if (loaded) {
         component = children
     }
 

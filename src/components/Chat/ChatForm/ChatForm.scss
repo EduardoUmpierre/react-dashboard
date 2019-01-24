@@ -12,13 +12,16 @@
     }
 
     > button {
-        background-color: #8ad919;
         border: none;
         border-radius: 0 3px 3px 0;
         color: #fff;
-        cursor: pointer;
         font-weight: 700;
         padding: 0.5rem 0.875rem;
+
+        &:not([disabled]) {
+            background-color: #8ad919;
+            cursor: pointer;
+        }
     }
 
     > input,
