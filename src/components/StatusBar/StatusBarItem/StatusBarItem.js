@@ -22,7 +22,7 @@ const statusBarItem = ({ icon, amount, text, theme }) => {
                 </div>
 
                 <div className='status-bar__data'>
-                    <Loader loaded={amount}>
+                    <Loader loaded={amount !== null}>
                         <span className='status-bar__amount'>
                             <NumericLabel params={numericLabelParams}>
                                 {amount}
