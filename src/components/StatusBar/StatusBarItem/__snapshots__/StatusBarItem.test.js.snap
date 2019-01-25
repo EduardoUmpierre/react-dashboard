@@ -51,7 +51,7 @@ ShallowWrapper {
           className="status-bar__data"
         >
           <loader
-            loaded="1000"
+            loaded={true}
           >
             <span
               className="status-bar__amount"
@@ -113,7 +113,7 @@ ShallowWrapper {
             className="status-bar__data"
           >
             <loader
-              loaded="1000"
+              loaded={true}
             >
               <span
                 className="status-bar__amount"
@@ -204,7 +204,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <loader
-              loaded="1000"
+              loaded={true}
             >
               <span
                 className="status-bar__amount"
@@ -261,7 +261,7 @@ ShallowWrapper {
                   New Orders
                 </span>,
               ],
-              "loaded": "1000",
+              "loaded": true,
             },
             "ref": null,
             "rendered": Array [
@@ -363,7 +363,7 @@ ShallowWrapper {
             className="status-bar__data"
           >
             <loader
-              loaded="1000"
+              loaded={true}
             >
               <span
                 className="status-bar__amount"
@@ -425,7 +425,7 @@ ShallowWrapper {
               className="status-bar__data"
             >
               <loader
-                loaded="1000"
+                loaded={true}
               >
                 <span
                   className="status-bar__amount"
@@ -516,7 +516,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <loader
-                loaded="1000"
+                loaded={true}
               >
                 <span
                   className="status-bar__amount"
@@ -573,7 +573,7 @@ ShallowWrapper {
                     New Orders
                   </span>,
                 ],
-                "loaded": "1000",
+                "loaded": true,
               },
               "ref": null,
               "rendered": Array [
